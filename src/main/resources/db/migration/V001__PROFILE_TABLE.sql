@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT8 GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    telegram_id INT8 UNIQUE,
+    name VARCHAR(30),
+    company VARCHAR(30),
+    email VARCHAR(50),
+    phone VARCHAR(40)
+)
